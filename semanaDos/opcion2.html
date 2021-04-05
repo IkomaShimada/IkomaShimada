@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles2.css">
+    <title>Reto 2</title>
+</head>
+<body>
+    <div class="form-container">
+        <h1 class="form-title">Sign Up</h1>
+        <form action="" id="survey-form">
+            <div class="form-group">
+                <label for="name" id="name-label">First name</label>
+                <input type="text" id="name" name="name" class="form-input" minlength="6" required>
+            </div>
+            <div class="form-group">
+                <label for="age" id="age-label">Age</label>
+                <input type="number" id="age" name="age" class="form-input" min="0" max="120" required>
+            </div>
+            <div class="form-group">
+                <label for="income" id="income-label">Income</label>
+                <input type="text" id="income" name="income" class="form-input" minlength="6" required>
+            </div>
+            <div class="form-group">
+                <label for="more-info" id="more-info-label">More Info</label>
+                <textarea name="more-info" id="more-info"></textarea>
+            </div>
+            <div class="spaced">
+                <p>Gender</p>
+                <input type="radio" value="male" name="gender"> Male
+                <input type="radio" class="input-radio" value="female" name="gender"> Female
+                <input type="radio" class="input-radio" value="trans" name="gender"> Trans
+            </div>
+            <div class="form-group">
+                <p>Plan</p>
+                <select name="plan" id="plan">
+                    <option value="select plan">Select plan</option>
+                </select>
+            </div>
+            <div class="spaced">
+                <input type="checkbox" class="input-checkbox" value="suscribe" name="suscribe"> Suscribe to Newsletter
+            </div>
+            <button>Update</button>
+        </form>
+    </div>
+</body>
+</html>
