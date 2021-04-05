@@ -73,8 +73,8 @@ input, button, select, textarea, fieldset {
 }
 
 button {
-    
-    justify-content: center;
+    display: block;
+    margin: 0 auto;
     width: 50%;
     padding: 15px 10px;
     background:green;
@@ -85,7 +85,7 @@ button {
 }
 
 button:hover {
-    color: var(--color-darkgrey);
-    border-color: var(--color-yellow);
-    background-color: var(--color-yellow);
+    color: black;
+    border-color: black;
+    background-color: white;
 }
