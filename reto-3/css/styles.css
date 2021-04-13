@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap');
 * {
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 .black-container {
     width: 100%;
@@ -64,13 +66,22 @@ section {
         flex-wrap: wrap;
     }
     .borded-container {
-        max-width: 300px;
+        max-width: 240px;
     }
 }
 /* MediaQuerie 900px Portatiles y pc */
 @media only screen and (min-width: 900px) {
     .black-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         min-height: 350px;
+    }
+
+    .bar-icon {
+        position: absolute;
+        top: 10px;
+        left: 10px;
     }
 
     .borded-container {
