@@ -1,0 +1,38 @@
+.papa {
+    width: 500px;
+    height: 1500px;
+    border:1px solid rebeccapurple;
+    margin-top: 30px;
+    /*Va a hacer que se vuelva una referencia para los elementos absolute hijos*/
+    position: relative;
+}
+
+.hijo {
+    width: 200px;
+    height: 200px;
+    margin: 5px;
+    border: 1px solid red;
+}
+/* caja1 no la tocamos*/
+.caja2 {
+    /* Cuando solo pongo absolute con referencias a las direcciones (top,left,bottom,right) va a asumir como refrencia la posición del body*/ 
+    /*absolute extrae de la estructura el elemento*/
+    position:absolute;
+    top: 40px;
+    left: 20px;
+    background-color: purple;
+    color: white;
+}
+
+.caja3{
+    position: relative;
+    z-index:2;
+    background-color: salmon;
+}
+
+.caja4 {
+    position: fixed;
+    bottom: 25px;
+    right: 45px;
+    background-color: brown;
+}

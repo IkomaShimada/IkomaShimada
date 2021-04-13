@@ -1,0 +1,41 @@
+* {
+    border: 1px solid gray;
+}
+
+/*Flexbox*/
+
+.menu {
+    width: 100%;
+    height: 500px;
+    background-color: lightblue;
+    display: flex;
+    /*Me indica la dirección de mis elementos hijos*/
+    flex-direction: row;
+    /*justify-content: me permite alinear de forma horizontal;*/
+    justify-content: center;
+    /*
+    space-around
+    space-evenly
+    space-between
+    center
+    */
+    /*align-items me permite alinear de forma vertical*/
+    align-items:center;
+    /*Indicar si el tamaño que indique a mis elementos hijos se va a mantener si reduzco el padre*/
+    flex-wrap: nowrap;
+}
+
+.link {
+    background-color: lightsalmon;
+    height: 75px;
+    width: 200px;
+    padding: 10px;
+}
+/*cuanto puede crecer un elemento*/
+.link3 {
+    flex-grow:3;
+}
+/*Cuanto puede achicarse*/
+.link6{
+    flex-shrink: 2;
+}
