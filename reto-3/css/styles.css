@@ -1,4 +1,8 @@
+* {
+    box-sizing: border-box;
+}
 .black-container {
+    width: 100%;
     background-color: black;
     color: white;
     padding: 10px;
@@ -38,8 +42,8 @@ section {
 }
 
 .borded-container {
-    height: 300px;
-    margin: 10px 0;
+    max-height: 380px;
+    margin: 10px auto;
     border: 2px solid lightgray;
     border-radius: 5px;
     padding: 40px;
@@ -48,6 +52,20 @@ section {
 
 .borded-container > img {
     height: 150px;
-    margin: 10px 0;
+    
 }
 
+/* MediaQuerie 480px Tablet */
+@media only screen and (min-width: 480px){
+    section {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    .borded-container {
+        width: 300px;
+    }
+}
+
+@media only screen and (min-width: 900px)
