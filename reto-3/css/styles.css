@@ -64,8 +64,18 @@ section {
         flex-wrap: wrap;
     }
     .borded-container {
-        width: 300px;
+        max-width: 300px;
     }
 }
+/* MediaQuerie 900px Portatiles y pc */
+@media only screen and (min-width: 900px) {
+    .black-container {
+        min-height: 350px;
+    }
 
-@media only screen and (min-width: 900px)
+    .borded-container {
+        min-height: 400px;
+        max-width: 30%;
+    }
+    
+}
