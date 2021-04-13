@@ -67,6 +67,7 @@ section {
     }
     .borded-container {
         max-width: 240px;
+        min-height: 450px;
     }
 }
 /* MediaQuerie 900px Portatiles y pc */
