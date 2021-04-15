@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Minecraftia';
+    src: url('../fonts/Minecraftia-Regular.ttf');
+}
+
+* {
+    font-family: 'Minecraftia';
+}
+
+h1 {
+    font-size: 24px;
+}
