@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+body {
+    background: linear-gradient(90deg ,#441943 20%, #76517c);
+}
+
+.grid {
+    width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    /* La sintaxis es esta repeat recibe dos parametros, la cantidad y la medida */
+    /* minmax recibe dos parametros el primero el valor mínimo del elemento en cuestión, el segundo el máximo */
+    grid-template-columns: repeat(5 , minmax(auto,1fr));
+    grid-template-rows: repeat(3 , 176px);
+    gap: 10px;
+}
+.grid > div {
+    border-radius: 10px;
+}
+
+.element1{
+    background-color: #379b8d;
+    grid-column: 1/3;
+    grid-row: 1/3;
+}
+.element2{
+    background-color: #4eacc4;
+    grid-column: 3/6;
+}
+.element3{
+    background-color: #9d5763;
+    grid-column: 3/5;
+    grid-row: 2/4
+}
+.element4{
+    background-color: #556167;
+    grid-column: 5/6;
+    grid-row: 2/3;
+}
+
+.element5{
+    background-color: #d9b0d3;
+    grid-column: 1/3;
+}
+.element6{
+    background-color: #6f6568;
+}

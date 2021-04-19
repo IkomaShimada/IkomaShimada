@@ -7,7 +7,6 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    border: 1px solid lightgray;
 }
 
 /* Agregando fuente local */
@@ -17,6 +16,11 @@
     /* La ubicación */
     src: url('./assets/fonts/Inter-Regular.woff');
 }
+
+/* @font-face {
+    font-family: 'Playfair Display';
+    src: url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+} */
 
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
 
@@ -80,6 +84,8 @@ header {
 
 .header-content > h1 {
     font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 64px;
 }
 
 .header-content > small {
@@ -100,6 +106,65 @@ header {
     font-family: 'Open Sans', sans-serif;
 }
 /*  > afecta a los priemros hijos */
-header > img {
+.header-img {
     width: 55%;
+    padding: 30px;
+}
+.header-img > img{
+    max-width: 100%;
+}
+
+/* Tarjetas */
+.destinations {
+    padding: 30px;
+}
+.header-destination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-destination >h3 {
+    font-family: 'Playfar Display',serif;
+    font-size: 36px;
+}
+
+.header-destination > a {
+    font-family: 'Open Sans',sans-serif;
+    font-weight: bold;
+    color: var(--color-primario);
+    font-size: 17px;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    width: 22%;
+    min-height: 280px;
+    position: relative;
+}
+
+.card > img {
+    max-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.place {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+    background-color: white;
+    width: 65%;
+    padding: 5px;
+    font-family: 'Open Sans',serif;
+    border-radius: 0 6px 0 0;
+}
+
+.place > h4 {
+    font-size: 16px;
 }

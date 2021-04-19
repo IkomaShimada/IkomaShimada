@@ -1,0 +1,85 @@
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #eee;
+    font-family: 'Open Sans', sans-serif;
+}
+.cards {
+    padding: 50px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* aquí vienen los estilos de c/ card */
+.card {
+    height: 400px;
+    width: 300px;
+    background-color: white;
+    border-radius: 5px;
+    margin: 20px;
+}
+
+/* superior */
+.card-imagen {
+    width: 100%;
+    height: 60%;
+    /* para cortar el contenido que sobrepasa */
+    overflow: hidden;
+    position: relative;
+}
+
+.card-imagen > img {
+    width: 100%;
+    /* moviendo imagen 60px para arriba */
+    transform: translate(0,-60px);
+}
+
+.card_fotos {
+    position: absolute;
+    bottom: 0;
+    background: orange;
+    color: white;
+    padding: 10px;
+    border-top-right-radius: 4px;
+}
+
+.card_fecha {
+    position: absolute;
+    width: 40px;
+    height: 50px;
+    top: 10px;
+    right: 10px;
+    background-color: orangered;
+    color: white;
+    padding: 2px;
+    border-radius: 5px;
+}
+
+/* inferior */
+
+.card-info {
+    padding: 20px;
+    height: 40%;
+}
+
+.card_subtitulo {
+    color: orangered;
+    margin-top: 4px;
+}
+
+.card_description {
+    margin-top: 5px;
+    font-size: 14px;
+    color: #333;
+    /*  */
+    /* visibility es una propiedad que no afecta al DOM */
+    /* visibility: hidden; */
+    /* opacity va de 0 a 1 como un porcentaje */
+    /* opacity: 0; */
+}
