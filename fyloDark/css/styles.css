@@ -34,30 +34,37 @@ h1, h2, h3, h4, h5, h6, p {
     margin: 0 auto;
 }
 .header {
-    padding: 0 3rem;
+    padding: 10px 30px;
     display: flex;
-    justify-content: space-between;
     align-content: center;
+}
+.logo-container {
+    display: flex;
+    width: 40%;
+    align-items: center;
 }
 .logo {
     width: 8rem;
-    height: 100%;
+    height: auto;
     align-self: center;
 }
 
 .nav-menu {
-    width: 100%;
+    width: 60%;
 }
 
 .nav-menu > ul{
+    margin: 0;
+    padding: 0;
     display: flex;
     justify-content: space-between;
     list-style: none;
 }
 
 .nav-option > a{
+    
+    font-size: 1.2rem;
     text-decoration: none;
-    line-height: 1.4rem;
     color: silver;
 }
 
@@ -106,6 +113,15 @@ h1, h2, h3, h4, h5, h6, p {
     grid-template-rows: auto;
     gap: 8rem;
     text-align: center;
+}
+
+.grid-feature {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 20px;
+    justify-items: center;
+    align-content: center;
 }
 
 .section-productive{
@@ -232,13 +248,12 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .container-cta h4 {
-    font-size: 1.8rem;
+    font-size: 2rem;
     margin: 0;
 }
 .container-cta p {
     margin: 0;
     color: silver;
-    font-size: 1.3rem;
 }
 
 .container-cta input{
