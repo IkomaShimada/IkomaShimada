@@ -20,7 +20,7 @@ html {
 body {
     background-color: var(--intro-bg);
     color: white;
-    padding-top: 1.5rem;
+    
     font-size: 1.4rem;
     line-height: 2rem;
     font-family: 'Open Sans', sans-serif;
@@ -30,6 +30,7 @@ h1, h2, h3, h4, h5, h6, p {
     margin: 0;
 }
 .container-content {
+    padding-top: 15px;
     max-width: 1600px;
     margin: 0 auto;
 }
@@ -37,10 +38,11 @@ h1, h2, h3, h4, h5, h6, p {
     padding: 10px 30px;
     display: flex;
     align-content: center;
+    justify-content: space-between;
 }
 .logo-container {
-    display: flex;
     width: 40%;
+    display: flex;
     align-items: center;
 }
 .logo {
@@ -50,15 +52,19 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .nav-menu {
-    width: 60%;
+    
+    margin: auto 0;
 }
 
 .nav-menu > ul{
     margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: space-between;
     list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
 }
 
 .nav-option > a{
@@ -130,8 +136,11 @@ h1, h2, h3, h4, h5, h6, p {
     background-color: var(--main-bg);
     padding: 0 3rem 13rem;
 }
-
-.section-productive > p {
+.productive-text {
+    display: grid;
+    gap: 20px;
+}
+.productive-text > p {
     color:silver;
     font-size: 1.6rem;
     line-height: 1.6em;
@@ -190,7 +199,7 @@ h1, h2, h3, h4, h5, h6, p {
     position: relative;
     padding: 0 30px 40px;
     display: grid;
-    
+    grid-template-columns: repeat(auto-fit,minmax(24rem,1fr));
     gap: 40px;
 }
 
@@ -325,4 +334,71 @@ footer {
 
 .attribution a {
     color: white;
+}
+
+@media (min-width: 600px) {
+    .container-content{
+        padding-top: 70px;
+    }
+    .logo {
+        width: 170px;
+    }
+    .nav-menu a{
+        font-size: 1.6rem;
+    }
+    .section-hero h2 {
+        font-size: 4rem;
+        line-height: 4rem;
+    }
+    .p-hero {
+        margin:40px auto 40px;
+        width: 550px;
+        font-size: 2rem;
+    }
+    .btn-hero {
+        width: 280px;
+        font-size: 1.6rem;
+    }
+    .section-grid {
+        grid-template-columns:repeat(2,minmax(240px,340px)) ;
+    }
+    .section-grid h3 {
+        font-size: 2rem;
+    }
+    .img-productive {
+        width: 80%;
+        height: auto;
+    }
+    .productive-text {
+        text-align: center;
+    }
+    .productive-text h2 {
+        font-size: 3.5rem;
+    }
+    .btn-no-bg {
+        margin: 0 auto;
+    }
+    .container-cta {
+        padding: 48px 70px 16px;
+    }
+    .container-cta h4 {
+        font-size: 3rem;
+    }
+    .container-cta input {
+        width: 48rem;
+        margin: 0 auto;
+    }
+    .btn-gradient {
+        width: 20rem;
+    }
+}   @media (min-width: 900px) {
+    .section-grid {
+        justify-content: center;
+        align-content: center;
+        gap:80px;
+        grid-template-rows: 30rem auto;
+    }
+    .grid-feature {
+    
+    }
 }
