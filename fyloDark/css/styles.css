@@ -127,7 +127,7 @@ h1, h2, h3, h4, h5, h6, p {
     grid-template-rows: auto;
     gap: 20px;
     justify-items: center;
-    align-content: center;
+    
 }
 
 .section-productive{
@@ -341,7 +341,7 @@ footer {
         padding-top: 70px;
     }
     .logo {
-        width: 170px;
+        width: 180px;
     }
     .nav-menu a{
         font-size: 1.6rem;
@@ -352,7 +352,7 @@ footer {
     }
     .p-hero {
         margin:40px auto 40px;
-        width: 550px;
+        width: 600px;
         font-size: 2rem;
     }
     .btn-hero {
@@ -361,6 +361,7 @@ footer {
     }
     .section-grid {
         grid-template-columns:repeat(2,minmax(240px,340px)) ;
+        gap: 40px;
     }
     .section-grid h3 {
         font-size: 2rem;
@@ -392,13 +393,28 @@ footer {
         width: 20rem;
     }
 }   @media (min-width: 900px) {
+    
+    .header {
+        padding:0 80px;
+    }
+    .img-intro {
+        width: 720px;
+    }
+    .text-hero {
+        margin: 0 auto;
+        width: 740px;
+    }
+    .section-hero {
+        background: url('../images/bg-curvy-desktop.svg') no-repeat bottom;
+        background-size: 100% auto;
+        padding: 70px 50px 170px;
+    }
+
+    
     .section-grid {
         justify-content: center;
         align-content: center;
-        gap:80px;
-        grid-template-rows: 30rem auto;
-    }
-    .grid-feature {
-    
+        gap:80px 150px;
+        grid-template-rows:auto;
     }
 }
