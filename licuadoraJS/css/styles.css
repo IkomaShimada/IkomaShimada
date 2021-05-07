@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+.container {
+    height: 100vh;
+    display: flex;
+    /* Align items sirve cuando solo existe una sola linea flexible */
+    /* align-content sirve cuando existe más de una sola linea de elementos flexibles*/
+    align-items: center;
+    justify-content: center;
+}
+
+.blender {
+    width: 700px;
+    height: 500px;
+    /* background-color: red; */
+    background-image: url("../img/licuadoraApagada.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.blender-btn {
+    margin: 350px auto 0;
+    width: 40px;
+    height: 70px;
+    
+}
+
+.blender-btn:hover {
+    cursor: pointer;
+}
+/* Para vincular dos clases a unas propiedades es necesario ponerlas juntas */
+.blender.active {
+    background-image: url("../img/licuadoraEncendida.gif");
+}
