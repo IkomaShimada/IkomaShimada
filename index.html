@@ -27,14 +27,101 @@
                 <a href="#">Animales</a>
             </div>
         </header>
-    </div>
-    <section class="grid-gallery">
-        <div class="item-galley">
-            <div class="content-gallery">
-                <img src="img/" alt="">
+        <section class="grid-gallery" id="grid-gallery">
+            <!-- Data category es un atributo especial que se crea usando la nueva API de HTML5 -->
+            <div class="item-gallery"  
+                data-category="ciudades" 
+                data-tags="ciudades autos carros calles"
+                data-description="1.-Lorem ipsum dolor sit amet consectetur."
+            >
+                <div class="content-item">
+                    <img src="./img/ciudad1.png" alt="ciudad">
+                </div>
             </div>
-        </div>
-    </section>
+            <div class="item-gallery"  
+                data-category="personas" 
+                data-tags="personas mujeres"
+                data-description="2.-Lorem ipsum dolor sit amet consectetur."
+            >
+                <div class="content-item">
+                    <img src="./img/persona1.png" alt="persona">
+                </div>
+            </div>
+
+            <div class="item-gallery"
+				 data-category="paisajes"
+				 data-tags="paisajes montañas mar playas"
+				 data-description="3.- Lorem ipsum dolor sit amet consectetur."
+			>
+				<div class="content-item">
+					<img src="img/paisaje1.png" alt="">
+				</div>
+			</div>
+
+			<div class="item-gallery"
+				 data-category="animales"
+				 data-tags="animales leones"
+				 data-description="4.- Lorem ipsum dolor sit amet consectetur."
+			>
+				<div class="content-item">
+					<img src="img/animal1.png" alt="">
+				</div>
+			</div>
+
+			<div class="item-gallery"
+				 data-category="animales"
+				 data-tags="animales pandas"
+				 data-description="5.- Lorem ipsum dolor sit amet consectetur."
+			>
+				<div class="content-item">
+					<img src="img/animal2.png" alt="">
+				</div>
+			</div>
+
+			<div class="item-gallery"
+				 data-category="personas"
+				 data-tags="personas mujeres"
+				 data-description="6.- Lorem ipsum dolor sit amet consectetur."
+			>
+				<div class="content-item">
+					<img src="img/persona2.png" alt="">
+				</div>
+			</div>
+
+			<div class="item-gallery"
+				 data-category="paisajes"
+				 data-tags="paisajes montañas niebla"
+				 data-description="7.- Lorem ipsum dolor sit amet consectetur."
+			>
+				<div class="content-item">
+					<img src="img/paisaje2.png" alt="">
+				</div>
+			</div>
+
+			<div class="item-gallery" 
+				 data-category="ciudades"
+				 data-tags="ciudades paisajes carreteras"
+				 data-description="8.- Lorem ipsum dolor sit amet consectetur."
+			>
+				<div class="content-item">
+					<img src="img/ciudad2.png" alt="">
+				</div>
+			</div>
+
+			<div class="item-gallery"
+				 data-category="naturaleza"
+				 data-tags="naturaleza hojas plantas"
+				 data-description="9.- Lorem ipsum dolor sit amet consectetur.
+				 	"
+			>
+				<div class="content-item">
+					<img src="img/naturaleza1.png" alt="">
+				</div>
+			</div>
+            
+        </section>
+    </div>
+    
     <!-- scripts -->
     <script src="https://cdn.jsdelivr.net/npm/web-animations-js@2.3.2/web-animations.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/muuri@0.9.3/dist/muuri.min.js"></script>

@@ -71,3 +71,34 @@ header .categories a {
 header .categories a.active {
     color: #000;
 }
+
+/* Grid */
+
+.grid-gallery {
+    position: relative;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 0.5s linear 1s;
+}
+
+.grid-gallery.img-loaded {
+    opacity: 1;
+}
+
+.grid-gallery .item-gallery {
+    position: absolute;
+    display: block;
+    padding: 0;
+    margin: 10px;
+    width: calc(33.3333% - 20px);
+}
+
+.grid-gallery .content-item {
+    position: relative;
+}
+
+.grid-gallery .item-gallery img {
+    width: 100%;
+    cursor: pointer;
+    vertical-align: top;
+}
